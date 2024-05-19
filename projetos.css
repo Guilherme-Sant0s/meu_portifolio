@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+/* estilo geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFFF;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.flex{
+    display:flex
+}
+
+.btncontato button{
+    background-color: #87CEEB;
+    color: #111312;
+    padding: 10px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    border-style: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+
+/*estilo especifico */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #79BAD4;
+    transform: scale(1.05);
+
+}
+
+header nav ul{
+    list-style-type: none;
+    
+}
+
+header nav{
+    font-size: 20px;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/*Menu mobile*/
+
+.btnabrir{
+    display: none;
+}
+
+.btnabrir i{
+    color: #111312;
+    font-size: 25px;
+    padding: 0px 10%;
+}
+
+.overlay_menu{
+    background-color: #242424b7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 888;
+    display: none;
+}
+
+.menu_mobile{
+    background-color: #79BAD4;
+    height: 100vh;
+    position:fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.menu_mobile.abrir-menu{
+    width: 60%;
+}
+
+.menu_mobile.abrir-menu ~ .overlay_menu{
+    display: block;
+}
+
+.menu_mobile nav ul{
+    text-align: right;
+}
+
+.menu_mobile nav ul li a{
+    color: #fff;
+    font-weight: 300;
+    padding: 20px 10%;
+    display: block;
+}
+
+.menu_mobile a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.menu_mobile a:hover{
+    color: #79BAD4;
+    transform: scale(1.05);
+
+}
+
+.btnfechar{
+    padding: 20px 10%;
+}
+.menu_mobile .btnfechar{
+    color:#fff;
+    font-size: 20px
+}
+
+
+
+/**/
+
+ .btncontato button:hover{
+    box-shadow: 0px 0px 5px;
+    transform: scale(1.05);
+}
+
+.logo{
+    color: #111312;
+    font-family: "Kode Mono", monospace;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: italic;
+}
+
+.pj h1{
+
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+
+.card-projetos i{
+   font-size: 100px;
+   margin-left: 210px;
+}
+
+#abrigo i{
+    margin-left: 250px;
+}
+
+#calculator i{
+    margin-left: 230px;
+}
+
+#slider i{
+    margin-left: 190px;
+}
+
+#embreve a{
+    margin-left: 205px;
+}
+
+
+.card-projetos{
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.card-projetos a{
+    margin-top: 10px;
+    margin-left: 180px;
+    display: flex;
+    color: #0A0A0A;
+    font-size: 20px;
+    text-decoration: none;
+    transition: .2s;
+}
+
+
+.card-projetos a:hover{
+    color: #79BAD4;
+    transform: scale(1.05);
+
+
+}
+
+
+
+@media screen and (max-width: 1020px) {
+    .logo{
+        margin: 0 5%;
+        color: #111312;
+        font-family: "Kode Mono", monospace;
+        font-size: 60%;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: italic;
+    }
+    
+    .btnabrir{
+        display: block;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+    
+    /*Cabeçario*/
+    .menu, .btncontato{
+        display:none
+    }
+
+    
+    
+    .card-projetos i{
+        font-size: 100px;
+        margin-left: 170px;
+     }
+    
+    
+    .card-projetos{
+        display: inline-block;
+        margin-top: 20%;
+    }
+
+    #hospital a{
+        margin-left: 35%;
+    }
+
+    #abrigo a{
+        margin-left: 25%;
+    }
+
+    #calculator a{
+        margin-left: 70%;
+    }
+
+    #slider a{
+        margin-left: 15%;
+    }
+
+    
+    #embreve a{
+        margin-left: 65%; 
+    }
+
+    #hospital i{
+        margin-left: 65%;
+    }
+
+    #calculator i{
+        margin-left: 100%;
+    }
+
+    #abrigo i{
+        margin-left: 60%;
+    }
+
+    #slider i{
+        margin-left: 20%;
+    }
+
+
+    
+
+
+    .card-projetos a{
+        display: flex;
+        font-size: 20px;
+        margin-top: 5px;
+        width: 100%;
+        color: #0A0A0A;
+        text-decoration: none;
+        transition: .2s;
+    }
+    
+    
+    .card-projetos a:hover{
+        color: #79BAD4;
+        transform: scale(1.05);
+        
+        
+    }
+
+    .card-projetos a{
+        margin-top: 5%;
+        margin-left: 50%;
+        display: flex;
+        color: #0A0A0A;
+        font-size: 140%;
+
+        text-decoration: none;
+        transition: .2s;
+    }
+    
+    
+    .card-projetos a:hover{
+        color: #79BAD4;
+        transform: scale(1.05);
+    
+    
+    }
+
+    #slider {
+        margin-left: 30%;
+        width: 50%;
+        height: 50%;
+    }
+}
