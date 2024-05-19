@@ -191,6 +191,13 @@ section .conteudosite .flex{
     line-height: 50px;
 }
 
+.textoesquerdo p{
+    margin-top: 10%;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
+}
 .conteudosite .textoesquerdo p{
     padding: 30px 2%;
     color: #111312;
@@ -236,6 +243,14 @@ section .conteudosite .flex{
         color: #111312;
         font-size: 150%;
         line-height: 20px;
+    }
+
+    .textoesquerdo p{
+        margin-top: 10%;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        font-weight: 400;
     }
 
     /*Imagem*/
