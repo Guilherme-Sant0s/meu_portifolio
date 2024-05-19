@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&family=Spline+Sans:wght@300..700&display=swap');
 
 /* estilo geral */
 *{
@@ -128,7 +127,7 @@ header nav ul li{
 .menu_mobile nav ul li a{
     color: #fff;
     font-weight: 300;
-    padding: 20px 10%;
+    padding: 20px 4%;
     display: block;
 }
 
@@ -157,11 +156,10 @@ header nav ul li{
 
 /**/
 
-.btncontato button:hover{
+ .btncontato button:hover{
     box-shadow: 0px 0px 5px;
     transform: scale(1.05);
 }
-
 
 .logo{
     color: #111312;
@@ -171,6 +169,8 @@ header nav ul li{
     font-weight: weight;
     font-style: italic;
 }
+
+/*estilo do conteudo do site */
 
 .conteudosite{
     padding: 40px 4%;
@@ -193,12 +193,11 @@ section .conteudosite .flex{
 
 .textoesquerdo p{
     margin-top: 10%;
-        font-size: 20px;
-        text-align: center;
-        justify-content: center;
-        font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 400;
 }
-
 .conteudosite .textoesquerdo p{
     padding: 30px 2%;
     color: #111312;
@@ -210,6 +209,8 @@ section .conteudosite .flex{
     height: 450px;
     margin-left: 100px;
 }
+
+/*estilo celular*/
 
 @media screen and (max-width: 1020px) {
     
@@ -244,6 +245,14 @@ section .conteudosite .flex{
         line-height: 20px;
     }
 
+    .textoesquerdo p{
+        margin-top: 10%;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        font-weight: 400;
+    }
+
     /*Imagem*/
 
     .image img{
@@ -252,4 +261,10 @@ section .conteudosite .flex{
         height: 60%;
         margin-left: 20%;
     }
+    
 }
+
+
+    
+    
+    
