@@ -292,9 +292,12 @@ header nav ul li{
     #calculator i{
         margin-left: 90%;
     }
+    #calculator a{
+        margin-left: 45%;
+    }
 
     #abrigo i{
-        margin-left: 50%;
+        margin-left: 60%;
     }
 
     #slider i{
